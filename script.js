@@ -26,6 +26,18 @@ const  createImagePath = () => {
 
     myImg.src = urlPath;
     textArea.value = urlPath;
+
+    textArea.focus();
+    textArea.select();
+
+    //Copy the selected text to the clipboard
+    navigator.clipboard.writeText(textArea.value)
+        .then(() => {
+            console.log("Text copied to clipboard");
+        })
+        .catch(err => {
+            console.log("Error copying text: ", err);
+        });
 }
 
 inputAll.forEach((curElem) => curElem.addEventListener("change", createImagePath));

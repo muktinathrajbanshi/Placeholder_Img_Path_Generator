@@ -53,6 +53,12 @@ div {
   margin: 0.8rem 0;
 }
 
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 div label {
   padding-right: 0.5rem;
 }
