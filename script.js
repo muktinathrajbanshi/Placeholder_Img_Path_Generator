@@ -11,11 +11,14 @@ const removeHashTag = (str) => {
     return str.replace("#", "");
 }
 
+const addPlus = (str) => {
+    return str.split(" ").join("+");
+}
 
 const  createImagePath = () => {
 
     urlObj.size = select.value;
-    urlObj.text = inputAll[0].value;
+    urlObj.text = addPlus(inputAll[0].value);
     urlObj.bgClr = removeHashTag(inputAll[1].value);
     urlObj.txtClr = removeHashTag(inputAll[2].value);
 
