@@ -10,12 +10,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #a3c5c7; */
-  /* background: linear-gradient(
-    0deg,
-    rgba(163, 197, 199, 1) 0%,
-    rgba(176, 163, 135, 1) 100%
-  ); */
 }
 
 section {
@@ -24,6 +18,31 @@ section {
   height: 20rem;
   background-color: beige;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+section :first-child {
+  margin-bottom: 0.5rem;
+}
+
+section :last-child {
+  margin-top: 0.5rem;
+}
+
+.style1 {
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
